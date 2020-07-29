@@ -1,6 +1,5 @@
 import json
 
-
 def lambda_handler(event, context):
     #Input
     text = event['startingText']
