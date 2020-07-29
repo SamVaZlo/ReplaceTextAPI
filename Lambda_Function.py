@@ -1,9 +1,9 @@
 import json
+replaceList = [ 'Oracle','Oracle©','Google','Google©','Microsoft','Microsoft©','Amazon','Amazon©','Deloitte','Deloitte©','test']
 
 def lambda_handler(event, context):
     #Input
     text = event['startingText']
-    replaceList = [ 'Oracle','Oracle©','Google','Google©','Microsoft','Microsoft©','Amazon','Amazon©','Deloitte','Deloitte©','test']
     
     #prevent error if amount of items i isn't even
     if len(replaceList)%2 != 0:
